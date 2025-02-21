@@ -70,9 +70,6 @@ To send a POST request to the `/chat/completions` endpoint with a user's prompt,
 
 ```bash
 curl -X POST http://localhost:8081/chat/completions      -H "Content-Type: application/json"      -d '{
-           "model": "mistral-small",
-           "temperature": 0.7,
-           "max_tokens": 1000,
            "messages": [
              {
                "role": "user",
@@ -114,9 +111,6 @@ To avoid formatting errors in `curl`, you can also create a JSON file (`data.jso
 
 ```json
 {
-  "model": "mistral-small",
-  "temperature": 0.7,
-  "max_tokens": 1000,
   "messages": [
     {
       "role": "user",
