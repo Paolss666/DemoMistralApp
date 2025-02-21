@@ -18,7 +18,7 @@ class MistralApiService(
 
     fun getResponse(prompt: String): String {
         val request = MistralRequest(
-            model = "mistral-small",  // modele
+            model = "mistralai/mistral-small-24b-instruct-2501:free",  // modele
             temperature = 0.7,
             max_tokens = 1000,
             messages = listOf(
